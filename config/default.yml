@@ -1,6 +1,9 @@
 require:
   - rubocop-performance
+  - rubocop-rake
+  - rubocop/require_tools
   - rubocop-rspec
+  - rubocop-thread_safety
 
 inherit_mode:
   merge:
@@ -12,6 +15,7 @@ AllCops:
     - 'lib/**/*'
     - 'bin/**/*'
   Exclude:
+    - 'bin/setup'
     - 'Gemfile.lock'
     - 'Gemfile'
     - 'gemfiles/**/*'

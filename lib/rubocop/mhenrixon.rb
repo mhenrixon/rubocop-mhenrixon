@@ -1,4 +1,6 @@
-require "rubocop/mhenrixon/version"
+# frozen_string_literal: true
+
+require 'rubocop/mhenrixon/version'
 
 module Rubocop
   module Mhenrixon

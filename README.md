@@ -1,8 +1,15 @@
-# Rubocop::Mhenrixon
+This gem is used to avoid having to duplicate my .rubocop configuration in all my open source projects.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubocop/mhenrixon`. To experiment with that code, run `bin/console` for an interactive prompt.
+It depends on the following rubocop files
 
-TODO: Delete this and the text above, and describe your gem
+```ruby
+gem 'rubocop', '~> 0.79'
+gem 'rubocop-performance', '~> 1.5'
+gem 'rubocop-rake', '~> 0.5'
+gem 'rubocop-rspec', '~> 1.37'
+gem 'rubocop-thread_safety', '~> 0.3'
+gem 'rubocop-require_tools', '~> 0.1'
+```
 
 ## Installation
 
@@ -22,7 +29,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+At the top of your `.rubocop.yml` add the following
+
+```yaml
+inherit_gem:
+  rubocop-mhenrixon:
+    - config/default.yml
+```
 
 ## Development
 
