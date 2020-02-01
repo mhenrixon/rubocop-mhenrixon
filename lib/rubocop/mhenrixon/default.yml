@@ -1,0 +1,40 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+
+inherit_mode:
+  merge:
+    - Exclude  
+
+AllCops:
+  Include:
+    - 'Rakefile'
+    - 'lib/**/*'
+    - 'bin/**/*'
+  Exclude:
+    - 'Gemfile.lock'
+    - 'Gemfile'
+    - 'gemfiles/**/*'
+    - '**/*.json'
+    - '**/*.yml'
+    - 'vendor/bundle/**/*'
+
+  TargetRubyVersion: 2.5
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - 'spec/**/*.rb'
+
+Metrics/MethodLength:
+  CountComments: false 
+  Max: 12
+
+Metrics/ParameterLists:
+  Enabled: true
+  Max: 5
+  CountKeywordArgs: false
+
+Layout/LineLength:
+  Enabled: true
+  Max: 125
