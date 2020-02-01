@@ -1,7 +1,6 @@
 require:
   - rubocop-performance
   - rubocop-rake
-  - rubocop/require_tools
   - rubocop-rspec
   - rubocop-thread_safety
 
