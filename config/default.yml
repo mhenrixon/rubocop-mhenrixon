@@ -9,6 +9,8 @@ inherit_mode:
     - Exclude  
 
 AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
   Include:
     - 'Rakefile'
     - 'lib/**/*'
@@ -21,8 +23,6 @@ AllCops:
     - '**/*.json'
     - '**/*.yml'
     - 'vendor/bundle/**/*'
-
-  TargetRubyVersion: 2.5
 
 Metrics/BlockLength:
   Enabled: true
