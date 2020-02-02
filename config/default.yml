@@ -45,3 +45,6 @@ Metrics/ParameterLists:
 
 RSpec/AlignLeftLetBrace:
   Enabled: true
+
+RSpec/ExampleLength:
+  Max: 10
