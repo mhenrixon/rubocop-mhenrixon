@@ -3,8 +3,11 @@
 require 'rubocop/mhenrixon/version'
 
 module Rubocop
+  #
+  # This is just a place holder for the module
+  #
+  # @author Mikael Henriksson <mikael@mhenrixon.com>
+  #
   module Mhenrixon
-    class Error < StandardError; end
-    # Your code goes here...
   end
 end

@@ -12,6 +12,9 @@ AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
   Include:
+    - "Rakefile"
+    - "Gemfile"
+    - "*.gemspec"
     - 'Rakefile'
     - 'lib/**/*'
     - 'bin/**/*'
@@ -19,10 +22,9 @@ AllCops:
   Exclude:
     - 'bin/setup'
     - 'Gemfile.lock'
-    - 'Gemfile'
     - 'gemfiles/**/*'
     - '**/*.json'
-    - '**/*.yml'
+    # - '**/*.yml'
     - 'vendor/bundle/**/*'
 
 Layout/LineLength:
