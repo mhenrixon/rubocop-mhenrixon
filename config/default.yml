@@ -7,6 +7,7 @@ require:
 inherit_mode:
   merge:
     - Exclude  
+    - Include  
 
 AllCops:
   DisplayCopNames: true
