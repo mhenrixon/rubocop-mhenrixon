@@ -11,6 +11,11 @@ rvm:
 
 before_install: gem install bundler -v 2.1.4
 
+script:
+  # - bundle exec reek .
+  - bundle exec rubocop -P .
+  - bundle exec rspec spec
+
 notifications:
   email:
     recipients:
