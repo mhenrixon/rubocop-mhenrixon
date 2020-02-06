@@ -20,6 +20,7 @@ AllCops:
     - 'lib/**/*'
     - 'bin/**/*'
     - 'spec/**/*.rb'
+    - '.simplecov'
   Exclude:
     - 'bin/setup'
     - 'Gemfile.lock'
