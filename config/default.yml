@@ -52,3 +52,12 @@ RSpec/AlignLeftLetBrace:
 
 RSpec/ExampleLength:
   Max: 10
+
+Style/HashEachMethods:
+  Enabled: true
+  
+Style/HashTransformKeys:
+  Enabled: true
+  
+Style/HashTransformValues:
+  Enabled: true
