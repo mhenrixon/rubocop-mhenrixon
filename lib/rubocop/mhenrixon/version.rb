@@ -2,6 +2,6 @@
 
 module Rubocop
   module Mhenrixon
-    VERSION = '0.79.8'
+    VERSION = '0.79.9'
   end
 end
