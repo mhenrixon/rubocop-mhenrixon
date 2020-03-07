@@ -26,7 +26,6 @@ AllCops:
     - 'Gemfile.lock'
     - 'gemfiles/**/*'
     - '**/*.json'
-    # - '**/*.yml'
     - 'vendor/bundle/**/*'
 
 Layout/LineLength:
