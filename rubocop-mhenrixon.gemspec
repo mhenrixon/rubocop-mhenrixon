@@ -34,11 +34,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rubocop', '~> 0.81.0'
-  spec.add_dependency 'rubocop-performance', '~> 1.5'
+  spec.add_dependency 'rubocop', '~> 0.88.0'
+  spec.add_dependency 'rubocop-performance', '~> 1.7'
   spec.add_dependency 'rubocop-rake', '~> 0.5'
-  spec.add_dependency 'rubocop-rspec', '~> 1.37'
-  spec.add_dependency 'rubocop-thread_safety', '~> 0.3'
+  spec.add_dependency 'rubocop-rspec', '~> 1.42'
+  spec.add_dependency 'rubocop-thread_safety', '~> 0.4'
 
   spec.add_development_dependency 'bundler', '~> 2.1'
   spec.add_development_dependency 'gem-release', '~> 2.1'

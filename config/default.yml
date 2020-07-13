@@ -28,9 +28,43 @@ AllCops:
     - '**/*.json'
     - 'vendor/bundle/**/*'
 
+#==============
+#=== LAYOUT ===
+#==============
+
+Layout/EmptyLinesAroundAttributeAccessor: # (0.83)
+  Enabled: true
+
 Layout/LineLength:
   Enabled: true
   Max: 125
+
+Layout/SpaceAroundMethodCallOperator: # (0.82)
+  Enabled: true
+
+#============
+#=== LINT ===
+#============
+
+Lint/DeprecatedOpenSSLConstant: # (0.84)
+  Enabled: true
+
+Lint/DuplicateElsifCondition: # (0.88)
+  Enabled: true
+
+Lint/MixedRegexpCaptureTypes: # (0.85)
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+
+#===============
+#=== METRICS ===
+#===============
 
 Metrics/BlockLength:
   Enabled: true
@@ -46,23 +80,92 @@ Metrics/ParameterLists:
   Max: 5
   CountKeywordArgs: false
 
+#===================
+#=== PERFORMANCE ===
+#===================
+
+Performance/AncestorsInclude: # (1.7)
+  Enabled: true
+
+Performance/BigDecimalWithNumericArgument: # (1.7)
+  Enabled: true
+
+Performance/RedundantSortBlock: # (1.7)
+  Enabled: true
+
+Performance/RedundantStringChars: # (1.7)
+  Enabled: true
+
+Performance/ReverseFirst: # (1.7)
+  Enabled: true
+
+Performance/SortReverse: # (1.7)
+  Enabled: true
+
+Performance/Squeeze: # (1.7)
+  Enabled: true
+  
+Performance/StringInclude: # (1.7)
+  Enabled: true
+
+#=============
+#=== RSPEC ===
+#=============
+
 RSpec/AlignLeftLetBrace:
   Enabled: true
 
 RSpec/ExampleLength:
   Max: 10
 
-Style/HashEachMethods:
+#=============
+#=== STYLE ===
+#=============
+
+Style/AccessorGrouping: # (0.87)
+  Enabled: true
+
+Style/ArrayCoercion: # (0.88)
+  Enabled: true
+
+Style/BisectedAttrAccessor: # (0.87)
+  Enabled: true
+
+Style/CaseLikeIf: # (0.88)
+  Enabled: true
+
+Style/ExponentialNotation: # (0.82)
   Enabled: true
   
+Style/HashAsLastArrayItem: # (0.88)
+  Enabled: true
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashLikeCase: # (0.88)
+  Enabled: true
+
 Style/HashTransformKeys:
   Enabled: true
   
 Style/HashTransformValues:
   Enabled: true
 
-Lint/RaiseException:
+Style/RedundantAssignment: # (0.87)
   Enabled: true
 
-Lint/StructNewOverride:
+Style/RedundantFetchBlock: # (0.86)
+  Enabled: true
+
+Style/RedundantFileExtensionInRequire: # (0.88)
+  Enabled: true
+
+Style/RedundantRegexpCharacterClass: # (0.85)
+  Enabled: true
+
+Style/RedundantRegexpEscape: # (0.85)
+  Enabled: true
+
+Style/SlicingWithRange: # (0.83)
   Enabled: true
