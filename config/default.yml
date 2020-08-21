@@ -12,6 +12,7 @@ inherit_mode:
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
+  TargetRubyVersion: 2.5
   Include:
     - "Rakefile"
     - "Gemfile"
@@ -55,10 +56,37 @@ Lint/DuplicateElsifCondition: # (0.88)
 Lint/MixedRegexpCaptureTypes: # (0.85)
   Enabled: true
 
+Lint/BinaryOperatorWithIdenticalOperands: # (0.89)
+  Enabled: true
+
+Lint/DuplicateRescueException: # (0.89)
+  Enabled: true
+
+Lint/EmptyConditionalBody: # (0.89)
+  Enabled: true
+
+Lint/FloatComparison: # (0.89)
+  Enabled: true
+
+Lint/MissingSuper: # (0.89)
+  Enabled: true
+
+Lint/OutOfRangeRegexpRef: # (0.89)
+  Enabled: true
+
 Lint/RaiseException:
   Enabled: true
 
+Lint/SelfAssignment: # (0.89)
+  Enabled: true
+
 Lint/StructNewOverride:
+  Enabled: true
+
+Lint/TopLevelReturnWithArgument: # (0.89)
+  Enabled: true
+
+Lint/UnreachableLoop: # (0.89)
   Enabled: true
 
 
@@ -136,7 +164,13 @@ Style/CaseLikeIf: # (0.88)
 
 Style/ExponentialNotation: # (0.82)
   Enabled: true
-  
+
+Style/ExplicitBlockArgument: # (0.89)
+  Enabled: true
+
+Style/GlobalStdStream: # (0.89)
+  Enabled: true
+
 Style/HashAsLastArrayItem: # (0.88)
   Enabled: true
 
@@ -150,6 +184,9 @@ Style/HashTransformKeys:
   Enabled: true
   
 Style/HashTransformValues:
+  Enabled: true
+
+Style/OptionalBooleanParameter: # (0.89)
   Enabled: true
 
 Style/RedundantAssignment: # (0.87)
@@ -167,5 +204,11 @@ Style/RedundantRegexpCharacterClass: # (0.85)
 Style/RedundantRegexpEscape: # (0.85)
   Enabled: true
 
+Style/SingleArgumentDig: # (0.89)
+  Enabled: true
+
 Style/SlicingWithRange: # (0.83)
+  Enabled: true
+
+Style/StringConcatenation: # (0.89)
   Enabled: true

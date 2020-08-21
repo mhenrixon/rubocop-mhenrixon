@@ -15,6 +15,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/mhenrixon/rubocop-mhenrixon'
   spec.license       = 'MIT'
 
+  spec.required_ruby_version = '2.5'
+
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
     spec.metadata['homepage_uri'] = spec.homepage
@@ -34,7 +36,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rubocop', '~> 0.88.0'
+  spec.add_dependency 'rubocop', '~> 0.89'
   spec.add_dependency 'rubocop-performance', '~> 1.7'
   spec.add_dependency 'rubocop-rake', '~> 0.5'
   spec.add_dependency 'rubocop-rspec', '~> 1.42'
