@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/mhenrixon/rubocop-mhenrixon'
   spec.license       = 'MIT'
 
-  spec.required_ruby_version = '2.5'
+  spec.required_ruby_version = '>= 2.5'
 
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
